@@ -1,4 +1,4 @@
-name: "Compile the homework"
+name: "Compile the homework 2"
 
 on:
   push:
