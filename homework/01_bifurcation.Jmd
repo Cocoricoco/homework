@@ -4,9 +4,9 @@ permalink: bifurcation/
 layout: page
 ---
 
-# IntroductionTest
+# Introduction
 
-> Starting from the logistic model of growth with competition, you will (i)
+> Allo Starting from the logistic model of growth with competition, you will (i)
 > propose an analysis to show how we can find a vaalue of the growth rate *r*
 > after which the population cannot persist (this will involve finding the
 > maximum of a function, and then iterating this function enough times from this
