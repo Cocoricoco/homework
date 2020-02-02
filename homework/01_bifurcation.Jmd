@@ -15,6 +15,10 @@ layout: page
 > unstable. Please note that you should not attempt to calculate this value by
 > hand, but you may attempt to guess it based on the results of the second step.
 
+
+
+
+
 ## Required packages
 
 ```julia
@@ -30,5 +34,35 @@ $$n(t+1) = n(t) + r\times n(t)\times \left(1-n(t)\right)$$
 ## Model analysis
 
 ## Simulations
+
+### Effet du paramètre r.
+
+Voici huit courbes du modèle logistique avec compétition dont le r varie de 0.1 à 4 par bonds de 0.5
+```julia
+#Activation de la librairie "Plots"
+using Plots
+plot()
+
+#Spécifier la formule du modèle et le type de valeurs de n et r
+function f(n::Float64, r::Float64)
+    return (n + (r * n * (1.0 - n)))
+end
+
+#Spécifier la taille de la population de départ et sa gradation
+population_size = zeros(Float64, 30)
+population_size[1] = 0.1
+
+#Boucle dans laquelle r varie de 0.1 à 4 par bonds de 0.5
+for r = 0.1:0.5:4
+    for i = 2:length(population_size)
+        population_size[i] = f(population_size[i-1], r)
+    end
+    #Tracer les valeurs provenant de la boucle
+    plot!(population_size[1:29], ylim=(-0.3, 1.5),
+    title = "Croissance Logistique", xlab="Temps", ylab=("Taille population")
+end
+plot!()
+```
+
 
 ## Conclusions
