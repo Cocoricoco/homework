@@ -56,7 +56,7 @@ for r = 0.1:0.5:4
     end
     #Tracer les valeurs provenant de la boucle
     plot!(population_size[1:29], ylim=(-0.3, 1.5),
-    title = "Croissance Logistique", xlab="Temps", ylab=("Taille population")
+    title = "Croissance Logistique", xlab="Temps", ylab="Taille population")
 end
 plot!()
 ```
