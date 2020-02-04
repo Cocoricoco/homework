@@ -15,3 +15,18 @@ layout: page
 > unstable. Please note that you should not attempt to calculate this value by
 > hand, but you may attempt to guess it based on the results of the second step.
 
+## Required packages
+
+```julia
+using Plots
+```
+## Model description and justification
+
+<!-- Use this model, it assumes that K = 1, making the system dimensionless -->
+
+$$n(t+1) = n(t) + r\times n(t)\times \left(1-n(t)\right)$$
+
+## Model analysis
+
+## Simulations
+
