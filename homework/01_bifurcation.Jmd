@@ -15,6 +15,11 @@ layout: page
 > unstable. Please note that you should not attempt to calculate this value by
 > hand, but you may attempt to guess it based on the results of the second step.
 
+Dans le modèle de croissance exponentielle, le taux de croissance par capita reste le même peu importe la taille de population. De ce modèle simpliste, plus la taille de population augmente, plus la population croit rapidement car il y a alors d’avantage d’individus reproducteurs. Il n’y a donc pas de compétition pour les ressources entre individus.
+
+Par contre, dans le modèle de croissance logistique, le taux de croissance par capita finit par diminuer lorsque la population augmente. La taille de population finit normalement pas se stabiliser autour de la capacité de support de la population (K = 1). D’avantages d’individus reproducteurs ne mènent pas necessairement à un taux de croissance plus élevé comme pour le modèle de croissance exponentielle car Il y a compétition entre les individus pour des ressources. Le début d’une courbe de croissance logistique ressemble à celui d’une courbe exponentielle car lorsque la population est de petite taille, il n’y a pas de compétition. 
+
+
 
 ## Required packages
 
